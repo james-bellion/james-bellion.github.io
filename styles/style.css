@@ -1,5 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+.bgImage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://live.staticflickr.com/2407/2439390497_40678a0d62_b.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.bgImage::after{
+   content: ''; 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.55);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px
+}
+
+.content p{
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+
+.content button{
+    padding: 12px 22px;
+    margin-top: 30px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #0077b6;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.content button:hover{
+    opacity: 1;
+}
+
 body {
-  background-color: #f1f1ff;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -10,6 +75,9 @@ header {
   background-color: #fff;
   padding: 15px;
   box-shadow: 0 0 3px #000;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
 }
 
 header li {
@@ -50,4 +118,8 @@ header li img{
     width: 300px;
     float: left;
     margin-top: -25px;
+}
+
+a{
+    text-decoration: none;
 }
