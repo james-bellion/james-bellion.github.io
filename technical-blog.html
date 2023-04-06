@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Technical-blog</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/style.css" type="text/css" />
-      </head>
-    
-      <body>
-        <header>
-          <ul>
-            <li><img src="Images/new-logo.png" alt="logo" /></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">My Blog</a></li>
-            <li><a href="blog/te-houtaewa-template.html">Te-Houtaewa</a></li>
-            <li><a href="technical-blog.html" class="active">Technical Blog</a></li>
-            <li id="contact"><a href="contact.html">Contact</a></li>
-          </ul>
-        </header>
-        <main class="tc-main">
-         <h1 id="tc-blog-title">Technical Blog</h1>
-         <h2 id="tc-blog-subtitle">Class's vs ID's, when and how to use them</h2>
-         <h4>Intro</h4>
-         <p>When creating websites we use the three programming languages of HTML, CSS and Javascript. First the HTML Builds the webpage and then we use CSS to add style to it and that is when using "classes" and ID's comes into pratice. </p>
-         <h4>class's</h4>
-         <p>an example of time when we may want to use a <strong>class</strong> would be to add more than one style to <strong>MULTIPLE</strong> different element of the html code</p>
-         <p>see this example below</p>
-         <div>
-            
-         </div>
+  <head>
+    <title>Technical-blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-        </main>
-    
-        </body>
+  <body>
+    <header>
+      <ul>
+        <li><img src="Images/new-logo.png" alt="logo" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">My Blog</a></li>
+        <li><a href="te-houtaewa.html">Te-Houtaewa</a></li>
+        <li><a href="technical-blog.html" class="active">Technical Blog</a></li>
+        <li id="contact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <main class="tb-main">
+      <div id="tb-logo">
+        <img id="blog-logo-img" src="Images/technical blog-4.png" alt="Technical blog logo">
+      </div>
+      <h2 id="tc-blog-subtitle">Class's vs ID's, when and how to use them</h2>
+
+      
+      <section class="css-example-section">
+        <div class="tb-intro">
+        <h4>Intro</h4>
+        <p class="blog-text">
+          When creating websites we use the three programming languages of HTML,
+          CSS and Javascript. First the HTML Builds the webpage and then we use
+          CSS to add style to it and that is when using "classes" and ID's comes
+          into pratice. Feel free to watch the Youtube tutorial and refear to the definitions below.
+        </p>
+        </div>
+        <div id="video-link-css">
+          <iframe width="520" height="315"
+  src="https://www.youtube.com/embed/SHIMUoAJHYU">
+  </iframe>
+        </div>
+        <h4>Class's</h4>
+        <p class="blog-text">
+          an example of time when we may want to use a
+          <strong>class</strong> would be to add more than one style to
+          <strong>MULTIPLE</strong> different element of the html code
+        </p>
+        <p class="blog-text">see this example below</p>
+        <div class="example-img">
+          <img src="Images/class-example-1.png" alt="html class example" />
+        </div>
+        <p class="blog-text">
+          you can then add a CSS rule that applis styling to all elements
+          containing the class "headings-class".<br />
+          See below. Note:
+          <strong>Remember to add a full stop (.)</strong> before your class
+          name so CSS can recognise this as a Class Rule.
+        </p>
+        <div class="example-img">
+          <img src="Images/example-2.png" alt="css class rule example" />
+        </div>
+        <p class="blog-text">
+          Now you will have both H1 and H2 headings in the color red when you
+          open your browser
+        </p>
+        <div class="example-img">
+          <img src="Images/example-3.png" alt="browser example" />
+        </div>
+        <p class="blog-text">
+          Classes can be usefull when styling multiple elements in one go
+          without having to create many different rules for the same element and
+          can come in handy when working on large files
+        </p>
+      </section>
+
+      <section class="css-example-section">
+        <h4>Id's</h4>
+        <p class="blog-text">
+          Alternitivly when you only need to target one specific element you can
+          use and id like so:
+        </p>
+        <div class="example-img">
+          <img src="Images/example-4.png" alt="id example tag" />
+        </div>
+        <p class="blog-text">
+          The CSS rule will be written the same way
+          <strong>Except it will start with a hash (#)</strong>rather then a
+          full stop (.)
+        </p>
+        <div class="example-img">
+          <img src="Images/example-5.png" alt="css id rule example image" />
+        </div>
+        <p class="blog-text">
+          The CSS rule applied to the HTML element with the class ID will now
+          apply those changes in your browser:
+        </p>
+        <div class="example-img">
+          <img
+            src="Images/example-6.png"
+            alt="browser imagine of ID rule applied"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="https://github.com/james-bellion"><i class="fa fa-github"></i></a>
+        <a href="https://instagram.com/belliondjames"><i class="fa fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
