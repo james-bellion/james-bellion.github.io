@@ -59,6 +59,7 @@
   cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.5s;
+  
 }
 
 .content button:hover {
@@ -88,7 +89,7 @@ header li {
 header li a {
   color: #333;
   text-decoration: none;
-  padding: 13px;
+  padding: 7px;
   transition: 0.3s ease;
 }
 
@@ -423,4 +424,155 @@ span {
 #day-plan {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+
+.banner {
+  position: relative;
+  width: 100vw; /* Set the width to 100vw to take up the full width of the viewport */
+  height: 500px; /* Set the height as desired */
+  overflow: hidden;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.banner img {
+  width: 100%; /* Set the image width to 100% to fill the banner container */
+  height: 100%; /* Set the image height to 100% to fill the banner container */
+  object-fit: cover;
+  filter: contrast(30%);
+  z-index: 1;
+}
+
+.banner-heading {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: whitesmoke;
+  font-size: 80px; /* Set the desired font size */
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 2;
+}
+
+
+
+
+
+.banner-content {
+  position: absolute;
+  top: 35%;
+  left: 10.5%;
+  transform: translateY(-50%);
+  font-size: 47px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/* nav section for blogs */
+
+/* Styling for the navigation section container */
+.navsection {
+  width: 100%;
+  background-color: #0D0D0D; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  padding: 20px 0; /* Set your desired padding */
+}
+
+/* Styling for the navigation section header */
+.navheader {
+  text-align: center;
+  font-size: 24px; /* Set your desired font size */
+  margin-bottom: 10px; /* Set your desired margin bottom */
+  background-color: #0D0D0D;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+/* Styling for the navigation section container */
+.navcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the navigation arrows */
+.navarrow {
+  font-size: 30px; /* Set your desired font size for the arrows */
+  cursor: pointer;
+  padding: 0 10px; /* Set your desired padding for the arrows */
+}
+
+/* Styling for the navigation links */
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the navigation link items */
+.navlinks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the list horizontally */
+}
+
+/* Styling for the navigation link items */
+.navlinks li {
+  margin: 0 10px; /* Set your desired margin between the link items */
+  text-align: center;
+}
+
+/* Styling for the navigation link icons */
+.navlinks i {
+  font-size: 36px; /* Set your desired font size for the icons */
+  margin-bottom: 5px; /* Set your desired margin bottom for the icons */
+}
+
+/* Styling for the navigation link text */
+.navlinks a {
+  text-align: center;
+  display: block;
+  font-size: 18px; /* Set your desired font size for the link text */
+  color: royalblue;
+}
+
+.navlinks a:hover {
+  color: #39FF14; /* Set your desired color for hover effect */
+}
+
+
+.section-E{
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* JS Blog */
+.cat-container {
+  display: flex; /* Display images in a row */
+  justify-content: center; /* Center align images horizontally */
+  flex-wrap: wrap; /* Wrap images to next row if needed */
+}
+
+.cat-container img {
+  max-width: 100%; /* Set maximum width to 100% for responsiveness */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  margin: 5px; /* Add margin between images for spacing */
+  width: 300px; /* Set desired width for medium-sized images */
+  object-fit: cover; /* Ensure all images have the same size by covering any extra space */
+}
+
+.cat-container .caption {
+  text-align: center; /* Center align captions */
+  margin-top: 5px; /* Add margin above captions for spacing */
+}
+
+.cat-text{
+  font-size: 26px;
+  color: #333;
 }
