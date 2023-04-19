@@ -604,3 +604,62 @@ span {
     display: none;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .lp-heading {
+    font-size: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .lp-text {
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+  .lp-text-li {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .lp-ul {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .section-E {
+    margin-bottom: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* style for bloackquote on problems blog */
+
+/* blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+} */
+
+.p-quote{
+margin-top: 20px;
+}
+
+.code-screen-shots{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.code-creen-shoot img {
+  max-width: 100%; /* Set maximum width to 100% for responsiveness */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  margin: 5px; /* Add margin between images for spacing */
+  width: 200px; /* Set desired width for medium-sized images */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  
+}
