@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analog Clock</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+     <header>
+      <ul>
+        <li><img class="james-bellion-logo" src="Images/new-logo.png" alt="logo" /></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="technical-blogs.html">Technical Blogs</a></li>
+        <li><a href="core-blogs.html">Core Blogs</a></li>
+        <li><a href="clock.html">Clock</a></li>
+      </ul>
+    </header> 
+
+    <main class="clock-mian">
+
+    
+
+    
+    <div class="analog-clock">
+      <!-- svg to hold clock -->
+      <svg width="140" height="140">
+
+        <!-- draw circle of radius 65 and center at (70,70) -->
+        <circle id="clock-face" cx="70" cy="70" r="65"/>
+
+        <!-- draw line for Hour hand -->
+        <line id="h-hand" x1="70" y1="70" x2="70" y2="38"/>
+
+        <!-- similary draw 3 more lines for Minuete Hand, Second HAnd and second Tail -->
+        <line id="m-hand" x1="70" y1="70" x2="70" y2="20"/>
+        <line id="s-hand" x1="70" y1="70" x2="70" y2="12"/>
+        <line id="s-tail" x1="70" y1="70" x2="70" y2="56"/>
+
+        <!-- create 4 <text> tag for 12, 3, 6 and 9 -->
+        <text x="62" y="18">12</text>
+        <text x="126" y="76">3</text>
+        <text x="66" y="130">6</text>
+        <text x="7" y="76">9</text>
+
+
+      </svg>
+
+      <!-- div to hold time -->
+       <div clas="time-text">
+      <!-- create span tag for time -->
+      <span id="hr">00</span>
+      <span>:</span>
+      <span id="min">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+      <span id="suffix">--</span>
+
+
+
+      </div>
+      
+    </div>
+
+  </main>
+
+
+
+
+    
+     <footer>
+        <div class="social-icons">
+          <a href="https://github.com/james-bellion"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://instagram.com/belliondjames"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </footer> 
+<script type="text/javascript" src="myScript.js"></script>
+</body>
+</html>
