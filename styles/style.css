@@ -130,7 +130,7 @@ a {
 
 
 
-* {
+/* /* { commented out for form
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -141,11 +141,11 @@ a {
   position: relative;
   width: 100%;
   height: 50vh; /* changed the height to 50vh */
-  background-image: url("https://live.staticflickr.com/2407/2439390497_40678a0d62_b.jpg");
+  /* background-image: url("https://live.staticflickr.com/2407/2439390497_40678a0d62_b.jpg");
   background-size: cover; /* changed to cover */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
-}
+} */ */ */
 
 .bgImage::after {
   content: "";
@@ -199,12 +199,12 @@ a {
   opacity: 1;
 }
 
-body {
+/* body { comented out for form 
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   text-align: center;
-}
+} */
 
 header {
   background-color: #fff;
@@ -928,12 +928,12 @@ margin-top: 20px;
     opacity: 1;
   }
   
-  body {
+  /* body { commented out for form
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     text-align: center;
-  }
+  } */
   
   header {
     background-color: #fff;
@@ -991,4 +991,134 @@ margin-top: 20px;
 }
 
 /* nav bar media styling */
+
+/* clock */
+
+/* *{ commented out for form 
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  font-size:14px;
+} */
+
+.analog-clock{
+  width:140px;
+  height:140px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#clock-face{
+  stroke:black;
+  stroke-width:2px;
+  fill:white;
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail{
+  stroke:black;
+  stroke-linecap:round;
+}
+
+#h-hand{
+  stroke-width:3px;
+}
+
+#m-hand{
+  stroke-width:2px;
+}
+
+#s-hand{
+  stroke-width:1px;
+}
+
+.time-text{
+  text-align:center;
+}
+
+
+
+/* styling form */
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.form-h1{
+  margin: 1em auto;
+  text-align: center;
+}
+
+.form-p{
+  margin: 1em auto;
+  text-align: center;
+}
+
+a {
+  color: #dfdfe2;
+}
 
